@@ -7,5 +7,6 @@
   try {
     localStorage.setItem('lotion-google-return', JSON.stringify({ at: Date.now(), hash: location.hash.slice(1) }));
   } catch (e) {}
-  location.replace('./#/home');
+  // A fresh address so the browser loads the latest Lotion, not an older saved copy.
+  location.replace('./?from=google&t=' + Date.now() + '#/home');
 </script>
