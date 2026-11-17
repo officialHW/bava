@@ -1,12 +1,12 @@
 <!doctype html>
 <meta charset="utf-8" />
-<title>Lotion</title>
+<title>Bava</title>
 <p style="font-family: system-ui; padding: 24px">Connecting your calendar…</p>
 <script>
-  // Google sends you back here with a short-lived pass in the address. Hand it to Lotion, then go home.
+  // Google sends you back here with a short-lived pass in the address. Hand it to Bava, then go home.
   try {
     localStorage.setItem('lotion-google-return', JSON.stringify({ at: Date.now(), hash: location.hash.slice(1) }));
   } catch (e) {}
-  // A fresh address so the browser loads the latest Lotion, not an older saved copy.
+  // A fresh address so the browser loads the latest Bava, not an older saved copy.
   location.replace('./?from=google&t=' + Date.now() + '#/home');
 </script>
